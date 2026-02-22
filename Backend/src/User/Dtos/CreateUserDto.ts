@@ -13,7 +13,7 @@ export class CreateUserDto {
   @IsNotEmpty()
   email: string;
 
-  @ApiProperty()
+  @ApiProperty({ example: 'senha123' })
   @MinLength(5, { message: "Senha precisa de pelo menos 6 digitos" })
   @IsString()
   @IsNotEmpty()
