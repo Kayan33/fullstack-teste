@@ -21,7 +21,7 @@ export class AuthenticationService {
     }
 
     async login(user: any) {
-        const payload = { sub: user.id,email: user.email };
+        const payload = { sub: user.id};
         return {
             message : 'Login efetuado com sucesso',
             user:{
@@ -32,4 +32,5 @@ export class AuthenticationService {
             access_token: this.jwtService.sign(payload),
         };
     }
+
 }
