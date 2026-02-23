@@ -1,0 +1,22 @@
+.hero {
+  min-height: calc(100vh - 80px); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  text-align: center;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  max-width: 800px;
+}
+
+.heroText {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  max-width: 600px;
+}

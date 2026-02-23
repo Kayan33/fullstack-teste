@@ -1,0 +1,144 @@
+/* src/styles/globals.css */
+
+/* 1. RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* BRAND TOKENS */
+  --color-primary: #850784;
+  --color-primary-hover: #6e066d;
+  --color-on-primary: #ffffff;
+  --color-danger: #F12244;
+  --color-danger-hover: #D11B38;
+  --color-success: #10b981;
+
+  /* BACKGROUND & SURFACE */
+  --color-background: #f0f0f0;
+  --color-surface: #ffffff;
+
+  /* TEXT TOKENS */
+  --color-text: #1e1e1e;
+  --color-text-muted: #6b7280;
+  --color-text-green: #6EB22D;
+
+  /* BORDER & RADIUS */
+  --color-border: #e5e7eb;
+  --radius: 6px;
+  --transition: 0.2s ease-in-out;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  padding: 0.7rem 1.0rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.btn-delet {
+  background-color: var(--color-danger);
+  color: var(--color-on-primary);
+  padding: 0.7rem 1.0rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.btn-delet:hover {
+  background-color: var(--color-danger-hover);
+}
+
+
+.input {
+  width: 100%;
+  padding: 0.7rem;
+  font: inherit;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  outline: none;
+  transition: var(--transition);
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+}
+
+
+.label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+
+.containerHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logout {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-danger);
+  border: 1.5px solid var(--color-danger);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.logout:hover {
+  background-color: var(--color-danger);
+  color: var(--color-on-primary);
+  box-shadow: 0 4px 12px rgba(241, 34, 68, 0.2);
+}
+
+
