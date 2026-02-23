@@ -80,6 +80,10 @@ Dentro da pasta **Backend**, execute:
 npx prisma migrate dev
 ```
 
+```bash
+npx prisma generate
+```
+
 ---
 
 ### 6️⃣ Inicie o projeto
