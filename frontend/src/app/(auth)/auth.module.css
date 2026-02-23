@@ -1,0 +1,42 @@
+.section {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 4rem; 
+  flex-wrap: wrap; 
+}
+
+.card {
+  width: 100%;
+  max-width: 450px; 
+  background-color: var(--color-surface);
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 15px 35px rgba(133, 7, 132, 0.1);
+  
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.footerText {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footerLink {
+  color: #6EB22D;
+  font-weight: bold;
+}

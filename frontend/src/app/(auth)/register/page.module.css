@@ -1,0 +1,26 @@
+.container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 4rem; 
+  flex-wrap: wrap; 
+}
+
+.welcomeContent {
+  max-width: 350px;
+}
+
+.welcomeTitle {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.welcomeDescription {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
