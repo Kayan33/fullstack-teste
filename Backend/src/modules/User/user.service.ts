@@ -64,14 +64,10 @@ export class UserService {
         }
 
         try {
-            const user = await this.prisma.user.updateMany({
+            await this.prisma.user.update({
                 where: { id, status: 'ACTIVE' },
                 data,
             });
-
-            if (user.count === 0) {
-                throw new NotFoundException('Usuário não encontrado');
-            }
             return { message: 'Usuário atualizado com sucesso', };
         } catch (error) {
 
@@ -81,15 +77,10 @@ export class UserService {
 
     async delete(id: string) {
         try {
-            const user = await this.prisma.user.updateMany({
+            await this.prisma.user.update({
                 where: { id, status: 'ACTIVE' },
                 data: { status: 'INACTIVE' },
             });
-
-            if (user.count === 0) {
-                throw new NotFoundException('Usuário não encontrado');
-            }
-
             return { message: 'Usuário deletado com sucesso' };
         } catch (error) {
             return handlePrismaError(error);
