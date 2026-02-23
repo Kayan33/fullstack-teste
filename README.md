@@ -62,7 +62,7 @@ URL_FRONT_LOCAL="http://localhost:3000"
 
 ### 4️⃣ Configure o .env do Frontend
 
-Crie um arquivo `.env.local` dentro da pasta **frontend**:
+Crie um arquivo `.env` dentro da pasta **frontend**:
 
 ```env
 NEXT_PUBLIC_API_URL="http://localhost:3001"
