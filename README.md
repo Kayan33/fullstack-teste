@@ -109,3 +109,12 @@ Aplicação rodará em:
 ```
 http://localhost:3000
 ```
+---
+
+## Documentação da API (Swagger)
+
+documentação da API estará disponível em:
+
+```
+http://localhost:3001/docs
+```
