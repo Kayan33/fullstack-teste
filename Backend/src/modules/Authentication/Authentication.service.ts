@@ -25,7 +25,6 @@ export class AuthenticationService {
         return {
             message : 'Login efetuado com sucesso',
             user:{
-                id: user.id,
                 name : user.name,
                 email : user.email
             },
